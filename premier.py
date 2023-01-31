@@ -7,7 +7,8 @@ from IPython.display import Audio
 import seaborn as sns
 
 # Importamos el DF y las Columnas
-df = pd.read_csv('/Users/ignaciocasado/Desktop/VD Steramlit/premier_data.csv')
+df = pd.read_csv('premier_data.csv')
+
 
 df['90s'] = df['minutes']/90
 
@@ -30,7 +31,7 @@ if page == "Historia":
      # Enlace a LinkedIn
     st.markdown("[Ignacio Casado](https://www.linkedin.com/in/ignacio-casado-ternero-a397991bb/)")
 
-    st.image('/Users/ignaciocasado/Desktop/VD Steramlit/descarga_campo.jpeg', caption=None, width=None, use_column_width=True)
+    st.image('descarga_campo.jpeg', caption=None, width=None, use_column_width=True)
 
 
     st.write('El fútbol es un deporte de equipo que se juega con un balón y dos equipos de once jugadores cada uno. El objetivo del juego es anotar más goles que el equipo contrario mediante el uso de los pies. El juego se juega en un campo rectangular con dos áreas de gol en cada extremo. Los jugadores tratan de pasar el balón a sus compañeros de equipo y avanzar hacia el área de gol del equipo contrario, mientras intentan evitar que el equipo contrario anote goles. El equipo que anota más goles al final del partido gana.')
@@ -42,8 +43,8 @@ if page == "Historia":
     st.title("Historia de la Premier League")
 
     # Imagen
-    st.image('/Users/ignaciocasado/Desktop/VD Steramlit/Barclays.jpeg', caption=None, width=None, use_column_width=True)
-    audio_file = '/Users/ignaciocasado/Desktop/VD Steramlit/NEW Premier League 202122 Matchday Intro.mp3'
+    st.image('Barclays.jpeg', caption=None, width=None, use_column_width=True)
+    audio_file = 'NEW Premier League 202122 Matchday Intro.mp3'
     st.audio(audio_file)
 
     # Parrafos
@@ -54,7 +55,7 @@ if page == "Historia":
     st.write('Dentro de todas las temporadas que se han disputado en la Premier League hay una que resalta por su signofocativa rareza y es la temporada 20/21, la cual resalta debido a que tuvo que hacer frente a una pandemia y vio afectada su forma de ser llevada dráticamente. Es por ello por lo que vamos a poder analizar al detalle el desempeño que tuvieron los jugadores bajo estas inesperadas circunstancias')
 
     st.markdown('##### Equipos que Conforman la Temporada 2020/2021')
-    st.image('/Users/ignaciocasado/Desktop/VD Steramlit/equipos.jpg', caption=None, width=None, use_column_width=True)
+    st.image('equipos.jpg', caption=None, width=None, use_column_width=True)
     teams = ['Arsenal', 'Aston Villa', 'Brighton & Hove Albion', 'Burnley', 'Chelsea',
          'Crystal Palace', 'Everton', 'Leeds United', 'Leicester City', 'Liverpool',
          'Manchester City', 'Manchester United', 'Newcastle United', 'Norwich City',
@@ -183,9 +184,9 @@ elif page == 'Análisis de Minutos Jugados':
 
 elif page == "Agradecimientos":
     st.title("Conclusiones")
-    audio_file_1 = '/Users/ignaciocasado/Desktop/VD Steramlit/Samba Do Brasil-Ey Macalena.mp3'
+    audio_file_1 = 'Samba Do Brasil-Ey Macalena.mp3'
     st.audio(audio_file_1)
     st.write('La página que ha creado es una herramienta que permite visualizar información de un dataframe de jugadores de fútbol. La idea principal es proporcionar una forma rápida y fácil de ver y analizar los datos relevantes, como el coste, el equipo y la posición de los jugadores.')
     st.write('En términos de mejoras, hay varias opciones que podría considerar para aumentar la funcionalidad de su página. Una opción es agregar una búsqueda interactiva de jugadores, lo que permitiría a los usuarios filtrar la información por nombre o posición. Además, podría agregar gráficos adicionales, como un gráfico de barras que muestre la cantidad de jugadores por equipo o posición, o un gráfico de líneas que muestre la evolución de los costes de los jugadores a lo largo del tiempo.')
     st.write('En general, esta página es un buen comienzo y tiene una base sólida para el desarrollo futuro. Con un poco más de trabajo y esfuerzo, puede convertirse en una herramienta poderosa e intuitiva para el análisis de datos de fútbol.')
-    st.image('/Users/ignaciocasado/Desktop/VD Steramlit/vini-neymar-paqueta-dance.gif')
+    st.image('vini-neymar-paqueta-dance.gif')
